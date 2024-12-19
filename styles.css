@@ -1,0 +1,32 @@
+.Centered {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+body {
+    background: black;
+}
+
+button {
+    width: 20%;
+    aspect-ratio: 2 / 1;
+    border-radius: 10px;
+    
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.5;
+    scale: 1.1;
+    cursor: pointer;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
