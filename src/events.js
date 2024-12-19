@@ -7,22 +7,22 @@ const keys = {
 
 document.addEventListener("keyup", e => {
     switch (e.key.toLowerCase()) {
-        case "ArrowLeft":
+        case "arrowleft":
         case "a":
             keys.left = false
             break
         
-        case "ArrowRight":
+        case "arrowright":
         case "d":
             keys.right = false
             break
 
-        case "ArrowUp":
+        case "arrowup":
         case "w":
             keys.up = false
             break
         
-        case "ArrowDown":
+        case "arrowdown":
         case "s":
             keys.down = false
             break
@@ -31,22 +31,22 @@ document.addEventListener("keyup", e => {
 
 document.addEventListener("keydown", e => {
     switch (e.key.toLowerCase()) {
-        case "ArrowLeft":
+        case "arrowleft":
         case "a":
             keys.left = true
             break
             
-        case "ArrowRight":
+        case "arrowright":
         case "d":
             keys.right = true
             break
             
-        case "ArrowUp":
+        case "arrowup":
         case "w":
                     keys.up = true
                     break
                     
-        case "ArrowDown":
+        case "arrowdown":
         case "s":
             keys.down = true
             break
