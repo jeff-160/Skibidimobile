@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="image.png" width=800 height=400 />
+  <img src="image.png" width=600 height=300 />
 </p>
 
 Made with [Matter.js](https://github.com/liabru/matter-js)  
