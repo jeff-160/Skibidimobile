@@ -3,6 +3,8 @@ let engine, render, canvas
 let wheels = [], toilet
 
 function Init() {
+    Matter.Common.setDecomp(decomp)
+
     engine = Engine.create()
     
     render = Render.create({
@@ -122,7 +124,7 @@ async function LoadScene() {
     Init()
     AddBounds()
 
-    const von = await LoadSprite("von.png", "von.json", canvas.clientWidth / 2, 0, 0.4, {
+    const von = await LoadSprite("von.png", "von.json", canvas.clientWidth / 2, canvas.clientHeight / 2, 0.4, {
         label: "von",
         friction: 0.8,
         restitution: 0.8,
@@ -131,6 +133,8 @@ async function LoadScene() {
     World.add(engine.world, von)
 
     await CreateCar()
+    
+    EventLoop()
 
     PlayMusic()
 }

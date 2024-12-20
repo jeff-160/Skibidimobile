@@ -77,5 +77,3 @@ function EventLoop() {
         Body.rotate(toilet, magnitude * (keys.up ? -1 : 1))
     }
 }
-
-EventLoop()
