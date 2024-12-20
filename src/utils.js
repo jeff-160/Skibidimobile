@@ -14,7 +14,7 @@ function ScaleTexture(rect) {
     }
 }
 
-async function LoadSprite(imageFile, vertexFile, x, y, scale, options) {
+async function LoadSprite(imageFile, vertexFile, x, y, scale, options = {}) {
     const sprite = await fetch(`assets/${vertexFile}`).then(res => res.json()).then(
         data => {
             const vertices = data["vertices"].flat().filter( 
